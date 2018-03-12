@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body, html { height:100%; width:100%;}
+form { height:100%; }
+body{ background:#ffffff; font-family:'gothamlight', Arial; font-size:14px; color:#666666; overflow-x:hidden; line-height: normal;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+img { max-width: 100%; height: auto; border:0; width: auto\9; /* ie8 */}
+a{ text-decoration:none; outline:0; border:0;}
+/*a:hover, a:focus{ text-decoration: none; border:0; outline: 0;}*/
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clr{ clear:both;}
+.push { height:114px;}
+ul, li{ list-style-type:none; margin: 0;}
+h1, h2, h3, h4, h5, h6{ font-weight:normal; margin: 0; padding: 0;}
+table{ border-collapse:collapse;}
+.fLeft{ float:left;}
+.fRight{ float:right;}
+.alignRight{ text-align:right;}
+.alignLeft{ text-align:left;}
+.alignCenter{ text-align:center;}
+.positionRelative{ position:relative;}
+*{ box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box;}
+a:hover,a:focus{ text-decoration: none; }
+
+::-webkit-input-placeholder {color: #a8aaa7;}
+:-moz-placeholder { color: #a8aaa7; opacity: 1;}
+::-moz-placeholder { color: #a8aaa7; opacity:  1;}
+:-ms-input-placeholder { color: #a8aaa7;}
+:placeholder-shown { color: #a8aaa7;}
+
+
+
+
+/********* Font Face ****************/
+@font-face {
+    font-family: 'gothambold';
+    src: url('../fonts/gotham-bold_0-webfont.eot');
+    src: url('../fonts/gotham-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-bold_0-webfont.woff') format('woff'),
+         url('../fonts/gotham-bold_0-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-bold_0-webfont.svg#gothambold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gothambook';
+    src: url('../fonts/gotham-book_0-webfont.eot');
+    src: url('../fonts/gotham-book_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-book_0-webfont.woff') format('woff'),
+         url('../fonts/gotham-book_0-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-book_0-webfont.svg#gothambook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../fonts/gotham-medium_0-webfont.eot');
+    src: url('../fonts/gotham-medium_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-medium_0-webfont.woff') format('woff'),
+         url('../fonts/gotham-medium_0-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-medium_0-webfont.svg#gothammedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamThin';
+    src: url('../fonts/gotham-thin_0.eot');
+    src: url('../fonts/gotham-thin_0.eot') format('embedded-opentype'),
+         url('../fonts/gotham-thin_0.woff') format('woff'),
+         url('../fonts/gotham-thin_0.ttf') format('truetype'),
+         url('../fonts/gotham-thin_0.svg#GothamThin') format('svg');
+}
+@font-face {
+    font-family: 'gothamblack';
+    src: url('../fonts/gotham-black-webfont.eot');
+    src: url('../fonts/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-black-webfont.woff') format('woff'),
+         url('../fonts/gotham-black-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-black-webfont.svg#gothamblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gothamlight';
+    src: url('../fonts/gotham-light_0-webfont.eot');
+    src: url('../fonts/gotham-light_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-light_0-webfont.woff') format('woff'),
+         url('../fonts/gotham-light_0-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-light_0-webfont.svg#gothamlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Conv_GothamRnd-Light';
+    src: url('../fonts/GothamRnd-Light.eot');
+    src: local('☺'), url('../fonts/GothamRnd-Light.woff') format('woff'), url('../fonts/GothamRnd-Light.ttf') format('truetype'), url('../fonts/GothamRnd-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***
+Global Margin
+***/
+.mTop20{ margin: 20px 0 0 0;}
+
+/***
+Main CSS Rules
+***********/
+
+/***
+Header
+***/
+.header{ width: 100%; position: fixed; left: 0; top: 0; background: #8a2432; padding: 40px 0 40px 30px; z-index: 999; }
+.logo{ width: auto; float: left; font-size: 0; margin:9px 0 0 0;}
+.logo a{ display: block;}
+.headerRight{ float: right; }
+.topNav{ width: auto; float: left; font-size: 0; margin:9px 0 0 0;}
+.topNav li{ display: inline-block; font-size: 16px; text-transform: uppercase; margin:0 24px 0 0;}
+.topNav li a{ display: block; color: #fff; }
+.topNav li a:hover, .topNav li a.activeNav{ border-bottom: 1px #ef0707 solid;}
+.social{ background: #ef0707; float: left; text-align: center; padding: 8px 10px;}
+.social ul li{ display: inline-block; font-size: 0; margin:0 6px; vertical-align: middle;}
+.social ul li a{ display: block;}
+
+.btnMobileNav{ width: 48px; height: 59px; background: #8a2432; padding: 5px 0 0 0; position: fixed; right: 20px; top: 0; cursor: pointer; display: none;}
+.bar{ display: block; height: 4px; background: #fff; font-size: 0; margin:0 0 5px 0; position: relative; transition: all 0.1s linear; -moz-transition: all 0.1s linear; -webkit-transition: all 0.1s linear;}
+.btnMobileNav.activeBtn .bar1{ transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); top: 11px;}
+.btnMobileNav.activeBtn .bar3{ transform: rotate(-45deg); -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); top: -6px;}
+.btnMobileNav.activeBtn .bar2{ opacity: 0;}
+
+
+.wrapper{ max-width: 1280px; margin:0 auto; padding: 0 20px;}
+.banner{ position: relative; text-align: center; margin:114px 0 0 0; background: url(../images/homeBanner.jpg) center top no-repeat; background-size: cover;}
+.banner img{ vertical-align: top;}
+.homeBannerInner{ padding: 150px 20px; }
+.homeBannerInner h2{ font-family: 'gothambold', Arial; font-size: 53px; line-height: 54px; color: #fff; letter-spacing: -2px; padding: 0 0 35px 0;}
+.homeBannerInner h3{ font-size: 25px; line-height: 30px; color: #fff;}
+.txtScale{ position: relative; }
+
+/***
+Our Team
+***/
+.ourTeamOuter{ background: #8a2432; padding: 100px 0; text-align: center; margin:114px 0 0 0;}
+.ourTeamOuter h2{ font-family: 'gothambold', Arial; font-size: 53px; line-height: 54px; color: #fff; margin: 0 0 100px 0; text-transform: uppercase;}
+.teamList li{ display: inline-block; margin:0 15px 20px 15px; position: relative;  transition: transform 0.2s linear; -moz-transition: transform 0.2s linear; -webkit-transition: transform 0.2s linear;}
+.teamList li a{ color: #cfcfcf; font-size: 18px;}
+.teamList li:hover{ transform: scale(1.05,1.05); -moz-transform: scale(1.05,1.05); -webkit-transform: scale(1.05,1.05);}
+.teamList li a span{ font-family: 'gothambold', Arial; font-size: 20px; color: #fff; text-transform: uppercase;}
+.ourTeamBanner img{ vertical-align: top; width: 100%; }
+
+/***
+Team Details
+***/
+.teamDetailsOuter{ background: #f6f6f6; position: relative; margin:114px 0 0 0;}
+.slideBttnCont{ width: 100%; position: absolute; left: 0; top: 0; z-index: 99;}
+.slideBttnLeft{ width: 40%; float: left; }
+.slideBttnRight{ width: 60%; float: left; padding:7% 7% 0 7%; }
+
+.teamDetailsLeft{ width: 40%; float: left; }
+.teamDetailsLeft img{ width: 100%; vertical-align: top;}
+.teamDetailsRight{ width: 60%; float: left; padding:7%;}
+.teamDetailsRight h2{ font-family: 'gothambold', Arial; font-size: 62px; line-height: 64px; color: #999999; text-transform: uppercase; margin:60px 0 15px 0;}
+.teamDetailsRight h4{ font-size: 20px; color: #666666;}
+.teamContent{ padding: 60px 0 0 0; }
+.teamContent p{ font-size: 22px; line-height: 34px; color: #999999; padding: 0 0 25px 0;}
+.contactDetails{ padding: 50px 0 0 0; }
+.contactDetails ul li{ display: inline-block; vertical-align: middle; font-size: 20px;}
+.contactDetails ul li a{ display: block;}
+.contactDetails ul li a.skype{ color: #00aff0; border-right: 2px #fff solid; padding: 0 30px 0 0;}
+.contactDetails ul li a.email{ color: #666666; padding: 0 0 0 30px;}
+.contactDetails ul li a img{ vertical-align: middle;}
+.backBttn{ float: left; }
+.forwardBttn{ float: right; }
+
+/***
+In the News
+***/
+.newsOuter{ margin:114px 0 0 0; }
+.newsRow{ display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center;  -moz-align-items: center;}
+.newsRow.alternate{ background: #f6f6f6; }
+.newsLeft{ width: 40%; overflow:hidden;}
+.newsLeft img{ vertical-align: top;  transition: transform 0.2s linear; -moz-transition: transform 0.2s linear; -webkit-transition: transform 0.2s linear;}
+.newsLeft:hover img{ transform: scale(1.05,1.05); -moz-transform: scale(1.05,1.05); -webkit-transform: scale(1.05,1.05);}
+.newsRight{ padding: 5%; width: 60%;}
+.newsRight h3{ font-family: 'gothambold', Arial; font-size: 30px; text-transform: uppercase; color: #666666; letter-spacing: -2px; padding: 0 0 15px 0;}
+.newsRight h4{ font-family: 'gothammedium', Arial; font-size: 15px; color: #8a2432; margin:0 0 30px 0;}
+.seeMore{ background: #8a2432; font-family: 'gothambold', Arial; font-size: 15px; color: #fff; text-transform: uppercase; display: inline-block; padding: 10px 30px; transition:background 0.2s linear; -moz-transition:background 0.2s linear; -webkit-transition:background 0.2s linear;}
+.seeMore:hover{ background: #b3273b;}
+
+/***
+Transactions
+***/
+.transactionBanner{ background: url(../images/transactionHeaderBg.jpg) top center no-repeat; background-size: cover; padding: 130px 0; text-align: center; margin:114px 0 0 0;}
+.transactionBanner h3{ font-family: 'gothambook', Arial; font-size: 35px; color: #fff; text-transform: uppercase; }
+.transactionBanner h4{ font-size: 24px; color: #fff; padding: 15px 0 0 0;}
+.transactionNav{ background: #fff; padding: 35px 0; text-align: center; }
+/*.transactionNav ul li{ display: inline-block; font-size: 14px; text-transform: uppercase; margin:0 30px;}
+.transactionNav ul li a{ display: block; color: #333333;}
+.transactionNav ul li a:hover, .transactionNav ul li a.active{ color: #ef0707;}*/
+
+.flexRow{ display: flex; display: -webkit-flex; justify-content: center; -webkit-justify-content: center;}
+.dvFlexBox{ height: 100%; overflow: hidden;}
+.dvFlexBox img{ height: 100%; vertical-align: top; transition: transform 0.2s linear; -moz-transition: transform 0.2s linear; -webkit-transition: transform 0.2s linear;}
+.dvFlexBox a{ display: block; position: relative; height: 100%; overflow: hidden;}
+.dvFlexBox:hover img{ transform: scale(1.05,1.05); -moz-transform: scale(1.05,1.05); -webkit-transform: scale(1.05,1.05); }
+.destination{ width: 100%; background: rgba(0,0,0,0.6); display: block; position: absolute; left: 0; bottom: 0; padding: 30px; font-family: 'gothammedium', Arial; font-size: 26px; color: #fff; z-index: 99;}
+
+.bootstrap-select .btn-info{ background:#eee; border-radius: 0; border:1px #ddd solid; font-family: 'gothammedium', Arial; font-size: 14px; color: #666;}
+.btn-info.active, .btn-info.focus, .btn-info:active, .btn-info:focus, .btn-info:hover, .open > .dropdown-toggle.btn-info{ background:#eee; border-radius: 0; border:1px #ddd solid; font-family: 'gothammedium', Arial; font-size: 14px; color: #666; }
+a:focus{ outline: 0; }
+.bootstrap-select .dropdown-toggle:focus{ outline: 0 !important; }
+
+/***
+Transaction Deal
+***/
+.transactionDealOuter{ margin:114px 0 0 0; }
+.dealRow{ display: flex; display: -webkit-flex; background: #f6f6f6;}
+.transactLeft{ width: 60%; }
+.transactRight{ width: 40%; }
+.transactDetails{ height: 100%; padding: 10%; }
+.dvShare{ padding: 0 0 50px 0; }
+.btnBack{ display: inline-block; float: left; }
+.btnShare{ display: inline-block; float: right; }
+.transactDetails h3{ font-family: 'gothambold', Arial; font-size: 55px; color: #666666; letter-spacing: -2px; line-height: 55px; text-transform: uppercase; margin:0 0 50px 0;}
+.transactDetails h4{ font-family: 'gothambook', Arial; font-size: 25px; color: #999999; line-height: 30px;}
+
+
+/***
+Footer
+***/
+.footer{ background: #fff; padding: 50px 30px; color: #999999;}
+.footerLeft{ width: 240px; float: left; }
+.footerMiddle{ display: block; overflow:hidden; text-align: center; padding: 0 20px 0 0;}
+.footNav{ width: auto; display: inline-block; vertical-align: top;}
+.footNav li{ display: inline-block; font-size: 14px; text-transform: uppercase; margin: 0 10px;}
+.footNav li a{ display: block; color: #999999; transition: color 0.3s linear; -moz-transition: color 0.3s linear; -webkit-transition: color 0.3s linear;}
+.footNav li a:hover, .footNav li a.activePage{ color: #1d1d1d;}
+.footerSocial{ font-size: 0; display: inline-block; vertical-align: top;}
+.footerSocial li{ display: inline-block; margin:0 6px;}
+.footerSocial li a{ display: block;}
+.footerSocial li a span{ display: inline-block; height: 18px; overflow:hidden; transition: background 0.2s linear; -moz-transition: background 0.2s linear; -webkit-transition: background 0.2s linear;}
+.footerSocial li a.in span{ width: 18px; background: url(../images/inIcon.png) 0 0 no-repeat; }
+.footerSocial li a.twitter span{ width: 17px; background: url(../images/twitterIcon.png) 0 0 no-repeat;}
+.footerSocial li a.gPlus span{ width: 16px; background: url(../images/gPlusIcon.png) 0 0 no-repeat; }
+.footerSocial li a:hover span{ background-position: bottom left; }
+
+.footerRight{ width: 20%; float: right; text-align: right;}
+.footerRight a{ display: block; margin:0 0 5px 0;}
+
+
+
+

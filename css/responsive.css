@@ -1,0 +1,106 @@
+@media (min-width:320px) and (max-width:767px){
+	.header{ padding:24px 15px; }
+	.logo{ margin:0; width: 220px; }
+	.headerRight{ width: 280px; height: 100%; background: #7c1f2c; position: fixed; right: -280px; top: 0; margin:0; padding: 10px 0 0 0; }
+	.topNav{ width: 100%; float: left; margin:0; }
+	.topNav li{ display: block; margin:0;}
+	.topNav li a{ display: block; padding: 10px 15px; opacity: 0.5}
+	.topNav li a:hover, .topNav li a.activeNav{ border:0; opacity: 1;}
+
+	.btnMobileNav{ display: block; top: 0; width: 42px; padding: 17px 0 0 10px;}
+	.social{ width: 100%; position: absolute; bottom: 0; left: 0;}
+	.banner{ margin:58px 0 0 0; }
+	.homeBannerInner{ padding: 50px 0;}
+	.homeBannerInner h2{ font-size: 26px; line-height: 34px; padding: 0 0 15px 0; letter-spacing: normal; }
+	.homeBannerInner h3{ font-size: 18px; line-height: 24px; }
+	.wrapper{ padding: 0 15px; }
+
+	.ourTeamOuter{ margin:58px 0 0 0; padding: 50px 0;}
+	.ourTeamOuter h2{ font-size: 32px; margin:0 0 40px 0; }
+	.teamList li{ margin:5px;}
+	.teamList li a{ font-size: 16px; }
+	.teamList li a span{ font-size: 16px; }
+
+	.teamDetailsOuter{ margin:58px 0 0 0; }
+	.teamDetailsRight h2{ font-size: 26px; line-height: 30px; margin:20px 0 5px 0; }
+	.teamDetailsRight h4{ font-size: 18px; }
+	.contactDetails{ padding: 20px 0 0 0; }
+	.contactDetails ul li{ display: block; margin:0 0 10px 0; font-size: 16px;}
+	.contactDetails ul li a.email{ padding: 0; }
+	.contactDetails ul li a.skype{ border:0; }
+	.teamDetailsLeft{ width: 100%; }
+	.teamDetailsRight{ width: 100%; }
+	.teamContent{ padding: 30px 0 0 0; }
+	.teamContent p{ font-size: 16px; line-height: 24px; padding: 0 0 20px 0; }
+
+	.transactionBanner{ margin:58px 0 0 0; padding:50px 0;}
+	.transactionBanner h3{ font-size: 22px; line-height: 32px; }
+	.transactionBanner h4{ font-size: 16px; line-height: 24px; }
+	.transactionNav{ padding: 15px 0; }
+	.destination{ padding: 15px; font-size: 20px; }
+	
+	.transactionListOuter .flexRow{ flex-wrap: wrap; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap;}
+	.transactionListOuter .dvFlex{ width: 100%; float: left;}
+	.transactionDealOuter{ margin:58px 0 0 0; }
+	.transactionDealOuter .dealRow{ flex-wrap: wrap; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap;}
+	.transactDetails h3{ font-size: 26px; line-height: 30px; margin:0 0 30px 0; }
+	.transactDetails h4{ font-size: 18px; line-height: 24px; }
+	.transactLeft{ width: 100%; }
+	.transactRight{ width: 100%; }
+	.transactDetails{ padding: 20px 15px; }
+	.dvShare{ padding: 0 0 30px 0; }
+
+	.newsOuter{ margin:58px 0 0 0; }
+	.newsRow{ align-items: flex-start; }
+	.newsRight{ padding: 15px 15px 30px 15px;}
+	.newsRight h3{ font-size: 16px; letter-spacing: normal; }
+	.newsRight h4{ margin:0 0 20px 0; }
+	.seeMore{ font-size: 12px; }
+
+
+	.footer{ padding: 20px 10px; }
+	.footerLeft{ width: 100%; text-align: center;}
+	.footerMiddle{ display: none; }
+	.footerRight{ width: 100%; float: left; text-align: center; margin:20px 0 0 0; }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+	.header{ padding:28px 20px; }
+	.logo{ margin:0; }
+	.headerRight{ width: 280px; height: 100%; background: #7c1f2c; position: fixed; right: -280px; top: 0; margin:0; padding: 10px 0 0 0; }
+	.topNav{ width: 100%; float: left; margin:0; }
+	.topNav li{ display: block; margin:0;}
+	.topNav li a{ display: block; padding: 10px 15px; opacity: 0.5}
+	.topNav li a:hover, .topNav li a.activeNav{ border:0; opacity: 1;}
+
+	.btnMobileNav{ display: block; top: 0; padding: 26px 10px 0 10px; height: 75px;}
+	.social{ width: 100%; position: absolute; bottom: 0; left: 0;}
+	.banner{ margin:74px 0 0 0; }
+	.homeBannerInner{ padding: 110px 0;}
+	.homeBannerInner h2{ font-size: 36px; line-height: 44px; padding: 0 0 15px 0; }
+
+	.ourTeamOuter{ margin:74px 0 0 0; }
+
+	.teamDetailsOuter{ margin:74px 0 0 0; }
+	.teamDetailsRight h2{ font-size: 42px; line-height: 48px; }
+	.contactDetails ul li{ display: block; margin:0 0 10px 0;}
+	.contactDetails ul li a.email{ padding: 0; }
+	.contactDetails ul li a.skype{ border:0; }
+
+	.transactionBanner{ margin:74px 0 0 0; }
+	.destination{ padding: 15px; font-size: 20px; }
+	
+	.transactionDealOuter{ margin:74px 0 0 0; }
+	.transactDetails h3{ font-size: 32px; line-height: 34px; margin:0 0 30px 0; }
+	.transactDetails h4{ font-size: 22px; line-height: 26px; }
+
+	.newsOuter{ margin:74px 0 0 0; }
+	.newsRight h3{ font-size: 22px; }
+
+
+
+
+	.footerMiddle{ display: none; }
+	.footerRight{ width: 50%; }
+}
